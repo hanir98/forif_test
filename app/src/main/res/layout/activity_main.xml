@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hallf.myapplication.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="기상상황"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:background="#3538c2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:id="@+id/textcity"
+        android:layout_height="50dp"
+        android:text="도시"/>
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/textwheater"
+        android:text="날씨" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:layout_height="60dp">
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/phto1"
+            android:scaleType="fitCenter"
+            android:onClick= "find"
+            />
+
+        <EditText
+            android:layout_width = "match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/input" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
